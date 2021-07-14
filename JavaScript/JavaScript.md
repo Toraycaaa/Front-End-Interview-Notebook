@@ -3762,4 +3762,9 @@ JavaScript中与java中的 位操作符 功能不同。java中位运算符可以
 [《JavaScript之（|、||、&、&&）操作符》](https://www.jianshu.com/p/07a1cabe6484)
 
 
+#### 178.JS错误处理
+
+try{}catch{}只能捕获同步编程下的错误，对于异步编程时可能比较麻烦。
+
+[《throw、try、catch、finally - JS异常处理》](https://zhuanlan.zhihu.com/p/196282064)
 
