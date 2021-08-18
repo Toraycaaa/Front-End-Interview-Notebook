@@ -74,3 +74,24 @@
 - 作用：处理 Vue 中 DOM 的异步更新
 - 简单的理解：在 DOM 渲染之后，会自动执行 callback 函数。
 - 举例：因为VDOM的原因，Vue会在清空事件队列的下一个周期中异步的统一对页面进行渲染（避免不必要的多次计算和DOM操作），因此，如果我们在渲染之前获取DOM节点被修改的状态，并不会获得修改后的状态。
+
+### 5. 虚拟DOM
+
+传统方法操作DOM（JS，JQuery）：数据改变 -> 操作DOM -> 视图更新
+
+虚拟DOM：数据改变 -> 虚拟DOM（计算变更） -> 操作DOM -> 视图更新
+
+虚拟DOM的实质：用JS Object来表示HTML结构。
+
+```js
+{
+    tag: "div",
+   	props: {
+       className:"container"
+    },
+    children: []
+}
+```
+
+
+
